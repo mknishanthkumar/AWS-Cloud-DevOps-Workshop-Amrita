@@ -1,56 +1,185 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nishanth - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="resume">
 
-    <div class="resume">
+    <aside>
+      <div class="avatar" aria-hidden="true">N</div>
+
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><span>Email</span>nishanthkumarmk@example.com</li>
+        <li><span>Phone</span>+91 8660664171</li>
+        <li><span>Location</span>Mysuru, India</li>
+        <li><span>GitHub</span>mknishanthkumar</li>
+        <li><span>LinkedIn</span>Nishanthkumarmk</li>
+      </ul>
+
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <ul class="chips">
+          <li>React</li>
+          <li>Vite</li>
+          <li>Tailwind CSS</li>
+          <li>React Router</li>
+          <li>EJS</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <ul class="chips">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>JWT auth</li>
+          <li>REST APIs</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <ul class="chips">
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>SQLite</li>
+          <li>SQLAlchemy</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>AI and vision</h3>
+        <ul class="chips">
+          <li>OpenCV</li>
+          <li>YOLO</li>
+          <li>EasyOCR</li>
+          <li>Prompt engineering</li>
+        </ul>
+      </div>
+
+      <h2>Languages</h2>
+      <ul class="plain">
+        <li>English</li>
+        <li>Add your languages</li>
+      </ul>
+    </aside>
+
+    <main>
+      <header>
         <h1>Nishanth</h1>
-        <p>Email: nishanthkumarmk1607@gmail.com</p>
-        <p>Phone: 9876543210</p>
-        <p>Address: Mysuru, Karnataka</p>
-
-        <hr>
-
-        <h2>Career Objective</h2>
-        <p>
-            To obtain a challenging position where I can
-            improve my skills and contribute to the organization.
+        <p class="role">Software developer and student</p>
+        <p class="summary">
+          Student developer who builds complete, working software: computer-vision systems,
+          secure full-stack apps and accessibility tools. I like turning a real-world problem into a
+          clean, tested product.
         </p>
+      </header>
 
-        <h2>Education</h2>
-        <ul>
-            <li>BCA - Amrita</li>
-            <li>PUC - Unity</li>
-            <li>SSLC - Citizen </li>
-        </ul>
-
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>HTML and CSS</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>JavaScript</li>
-        </ul>
-
+      <section>
         <h2>Projects</h2>
-        <p><b>My Resume Website:</b> Created a resume
-        webpage using HTML and CSS.</p>
 
-        <h2>Personal Details</h2>
-        <p>Date of Birth: 16/07/2006</p>
-        <p>Languages: English, Kannada</p>
+        <div class="item">
+          <div class="item-head">
+            <h3>Advanced Vehicle Recognition System</h3>
+            <span class="tag">Python, FastAPI, React</span>
+          </div>
+          <p class="sub">Camera-based license plate recognition</p>
+          <ul>
+            <li>Reads plates live from a webcam, image or video using OpenCV, YOLO and EasyOCR.</li>
+            <li>Matches normalized plate numbers against a violation list (unpaid fines above ₹10,000) and an authorized
+              watchlist.</li>
+            <li>Emails the nearest police station through Gmail SMTP when a match is found, and logs every detection.
+            </li>
+            <li>Uses a confidence gate and a frame queue so capture and recognition run independently.</li>
+          </ul>
+        </div>
 
-        <h2>Declaration</h2>
-        <p>
-            I hereby declare that the information provided
-            above is true to the best of my knowledge.
-        </p>
+        <div class="item">
+          <div class="item-head">
+            <h3>Assistive software for amputee students</h3>
+            <span class="tag">Research project</span>
+          </div>
+          <p class="sub">Windows application, with a research paper to follow</p>
+          <ul>
+            <li>Switches automatically between face and eye tracking and speech recognition depending on the task.</li>
+            <li>Designed to help students with limb loss use a computer more independently.</li>
+          </ul>
+        </div>
 
-    </div>
+        <div class="item">
+          <div class="item-head">
+            <h3>ScanVault</h3>
+            <span class="tag">React, Node.js, PostgreSQL</span>
+          </div>
+          <p class="sub">Full-stack barcode scanner app</p>
+          <ul>
+            <li>Scans barcodes from the device camera using ZXing.</li>
+            <li>Role-based access, JWT authentication and rate limiting on the API.</li>
+          </ul>
+        </div>
 
+        <div class="item">
+          <div class="item-head">
+            <h3>Supermarket Billing and Management System</h3>
+            <span class="tag">React, Node.js, MySQL</span>
+          </div>
+          <p class="sub">Retail billing for admins and cashiers</p>
+          <ul>
+            <li>Barcode scanning at checkout and invoice delivery over WhatsApp and email.</li>
+            <li>Separate Admin and Cashier roles with JWT-based login.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-head">
+            <h3>Resume Builder Website</h3>
+            <span class="tag">Node.js, Express, EJS</span>
+          </div>
+          <p class="sub">MVC web application</p>
+          <ul>
+            <li>Lets users pick from multiple resume templates and generate their own resume.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="two-col">
+          <div class="edu">
+            <h3>Amrita Vishwa Vidyapeetham</h3>
+            <p>2024 - 2027</p>
+            <p>Coursework: Soft Skills, India Financial System</p>
+          </div>
+          <div class="edu">
+            <h3>Higher secondary</h3>
+            <p>Unity PU Collage</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Currently learning</h2>
+        <ul class="chips learning">
+          <li class="tag">Docker</li>
+          <li class="tag">Agentic AI tools</li>
+          <li class="tag">Structured prompting and JSON outputs</li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
 </body>
+
 </html>
